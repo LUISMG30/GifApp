@@ -6,7 +6,7 @@
 
 
     </button>
-    <button *ngFor="let tag of tags" class="list-group-item list-group-item-action" aria-current="true">
+    <button *ngFor="let tag of tags" class="list-group-item list-group-item-action" aria-current="true" #tag (click)="searchtag(tag)">
       {{tag | titlecase}}
     </button>
 
